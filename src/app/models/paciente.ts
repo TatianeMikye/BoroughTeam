@@ -1,17 +1,19 @@
 import { Consulta } from "app/models/consulta";
 
 export class Paciente {
-    private _id: number;
-    private _nome: string = "";
-    private _cadastroSUS: string = "";
-    private _cpf: string = "";
-    private _consultas: Consulta[] = [];
+    public id: number;
+    public nome: string = "";
+    public cadastroSUS: string = "";
+    public cpf: string = "";
+    public consultas: Consulta[] = [];
+    public dataNascimento: string = "";
 
-    constructor (id: number, nome: string, cadastroSUS: string, cpf: string, consultas: Consulta[]) {
-        this._id = id;
-        this._nome = nome;
-        this._cadastroSUS = cadastroSUS;
-        this._cpf = cpf;
-        this._consultas = consultas;
+    constructor (id: number, nome: string, cadastroSUS: string, cpf: string, consultas: Consulta[], dataNascimento: string) {
+        this.id = id;
+        this.nome = nome;
+        this.cadastroSUS = cadastroSUS;
+        this.cpf = cpf;
+        this.consultas = consultas;
+        this.dataNascimento = dataNascimento;
     }
 }

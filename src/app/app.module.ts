@@ -16,6 +16,8 @@ import { IconsComponent }   from './icons/icons.component';
 import { MapsComponent }   from './maps/maps.component';
 import { NotificationsComponent }   from './notifications/notifications.component';
 import { UpgradeComponent }   from './upgrade/upgrade.component';
+import { ServiceDados } from 'app/service/service';
+import { ConsultasDoPacienteComponent } from './pages/consultas-do-paciente/consultas-do-paciente.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { UpgradeComponent }   from './upgrade/upgrade.component';
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
-    UpgradeComponent
+    UpgradeComponent,
+    ConsultasDoPacienteComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,9 @@ import { UpgradeComponent }   from './upgrade/upgrade.component';
     NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyBr-tgUtpm8cyjYVQDrjs8YpZH7zBNWPuY'})
 
   ],
-  providers: [],
+  providers: [
+    ServiceDados,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
