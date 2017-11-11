@@ -14,10 +14,7 @@ export const ROUTES: RouteInfo[] = [
     { path: 'new/registroConsulta', title: 'Registro consulta',  icon:'ti-user', class: '' },
     { path: 'consulta', title: 'Consulta',  icon:'ti-pencil-alt2', class: '' },
     { path: 'exames', title: 'Exames',  icon:'ti-view-list-alt', class: '' },
-    { path: 'resultados', title: 'Resultados do exame',  icon:'ti-text', class: '' },
-    // { path: 'maps', title: 'Maps',  icon:'ti-map', class: '' },
-    // { path: 'notifications', title: 'Notifications',  icon:'ti-bell', class: '' },
-    // { path: 'upgrade', title: 'Upgrade to PRO',  icon:'ti-export', class: 'active-pro' },
+    { path: 'resultados', title: 'Resultados do exame',  icon:'ti-text', class: '' }
 ];
 
 @Component({

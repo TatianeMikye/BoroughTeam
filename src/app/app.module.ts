@@ -12,10 +12,6 @@ import { DashboardComponent }   from './dashboard/dashboard.component';
 import { UserComponent }   from './user/user.component';
 import { TableComponent }   from './table/table.component';
 import { TypographyComponent }   from './typography/typography.component';
-import { IconsComponent }   from './icons/icons.component';
-import { MapsComponent }   from './maps/maps.component';
-import { NotificationsComponent }   from './notifications/notifications.component';
-import { UpgradeComponent }   from './upgrade/upgrade.component';
 
 @NgModule({
   declarations: [
@@ -23,19 +19,13 @@ import { UpgradeComponent }   from './upgrade/upgrade.component';
     DashboardComponent,
     UserComponent,
     TableComponent,
-    TypographyComponent,
-    IconsComponent,
-    MapsComponent,
-    NotificationsComponent,
-    UpgradeComponent
+    TypographyComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(AppRoutes),
     SidebarModule,
-    NavbarModule,
-    NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyBr-tgUtpm8cyjYVQDrjs8YpZH7zBNWPuY'})
-
+    NavbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
