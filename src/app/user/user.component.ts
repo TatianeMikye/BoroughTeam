@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TextMaskModule } from 'angular2-text-mask';
-
 
 @Component({
     selector: 'user-cmp',
