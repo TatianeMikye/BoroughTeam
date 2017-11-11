@@ -4,10 +4,10 @@ import { DashboardComponent }   from './dashboard/dashboard.component';
 import { UserComponent }   from './user/user.component';
 import { TableComponent }   from './table/table.component';
 import { TypographyComponent }   from './typography/typography.component';
-import { IconsComponent }   from './icons/icons.component';
+/*import { IconsComponent }   from './icons/icons.component';
 import { MapsComponent }   from './maps/maps.component';
 import { NotificationsComponent }   from './notifications/notifications.component';
-import { UpgradeComponent }   from './upgrade/upgrade.component';
+import { UpgradeComponent }   from './upgrade/upgrade.component';*/
 import { ConsultasDoPacienteComponent } from 'app/pages/consultas-do-paciente/consultas-do-paciente.component';
 
 export const AppRoutes: Routes = [
@@ -25,7 +25,7 @@ export const AppRoutes: Routes = [
         component: UserComponent
     },
     {
-        path: 'exames',
+        path: 'pacientes/consultas/exames',
         component: TableComponent
     },
     {

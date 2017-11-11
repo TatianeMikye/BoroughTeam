@@ -1,15 +1,15 @@
 export class Exame {
     private id: number;
-    private tipo: string = "";
+    private tipoExame: string;
+    private subExame: Object;
     private dataSolicitacao: string = "";
     private status: string = "";
-    private resultado: string = "";
-
-    constructor (id: number, tipo: string, dataSolicitacao: string, status: string, resultado: string) {
+     
+    constructor (id: number, tipoExame: string, subExame: Object, status: string, dataSolicitacao: string) {
         this.id = id;
-        this.tipo = tipo;
+        this.tipoExame = tipoExame;
         this.dataSolicitacao = dataSolicitacao;
+        this.subExame = subExame;
         this.status = status;
-        this.resultado = resultado;
     }
 }
