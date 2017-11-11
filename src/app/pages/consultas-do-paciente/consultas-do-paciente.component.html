@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="content table-responsive table-full-width">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Data e Hora</th>
+                                <th>Médico</th>
+                                <th>Descrição</th>
+                                <th>Exames</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr *ngFor="let c of consultas">
+                                    <td>{{c.data}} {{c.hora}}</td>
+                                    <td>{{c.medico.nome}}</td>
+                                    <td>{{c.descricao}}</td>
+                                    <td><a [routerLink]="['exames', {'paramKey': c.id}]"><button class="btn ti-arrow-right" (click)="this.goToPaciente"></button></a></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
