@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TextMaskModule } from 'angular2-text-mask';
+
 
 @Component({
     selector: 'user-cmp',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: 'user.component.html'
 })
 
-export class UserComponent implements OnInit{
-    ngOnInit(){
+export class UserComponent implements OnInit {
+    ngOnInit() {
     }
 }
