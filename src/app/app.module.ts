@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { TextMaskModule } from 'angular2-text-mask';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
