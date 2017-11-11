@@ -20,7 +20,7 @@ export const AppRoutes: Routes = [
         component: DashboardComponent
     },
     {
-        path: 'user',
+        path: 'new/registroConsulta',
         component: UserComponent
     },
     {
