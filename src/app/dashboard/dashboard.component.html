@@ -1,15 +1,41 @@
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-11">
+    
+    <div class="row" style="margin-top:20px">
+        <div class="col-lg-12">
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Pesquise o paciente pelo nº do cartão sus">
                 <span class="input-group-btn">
-                    <button class="btn btn-info" type="button">Pesquisar</button>
+                    <button class="btn btn-info" type="button" (click)="this.onSelectPaciente">Pesquisar</button>
                 </span>
             </div>
         </div>
     </div>
-    <div class="row" *ngIf="">
-        
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="content table-responsive table-full-width">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Número do Cartão SUS</th>
+                                <th>Nome do Paciente</th>
+                                <th>Data de Nascimento</th>
+                                <th>CPF</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{paciente.cartaoSus}}</td>
+                                <td>{{paciente.nome}}</td>
+                                <td>{{paciente.dataNascimento}}</td>
+                                <td>{{paciente.cpf}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                </div>
+            </div>
+        </div>
     </div>
 </div>

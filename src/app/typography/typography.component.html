@@ -1,8 +1,16 @@
 <div class="container-fluid">
     <div class="panel panel-default">
-        <div style="margin-left: 10px">
+        <div style="margin-left: 10px; margin-bottom: 20px">
             <h3>{{resultado.tipoExame}}</h3>
-            <h4>{{resultado.nome}}</h4>
+            <div *ngFor="let subExame of resultado.subExame" style="margin-left: 10px; margin-bottom: 20px">
+                <h5>Exame: {{subExame.nome}}</h5>
+                <h6>Analista do Exame: {{subExame.analistaExame}}</h6>
+                <h6>Material: {{subExame.material}}</h6>
+                <h6>Método: {{subExame.metodo}}</h6>
+                <h6>Equipamento: {{subExame.equipamento}}</h6>
+                <h6>Resultado: {{subExame.resultado}}</h6>
+                <h6>Valores Referência: {{subExame.valoresReferencia}}</h6>
+            </div>
         </div>
     </div>     
 </div>
