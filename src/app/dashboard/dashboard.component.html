@@ -24,15 +24,14 @@
                                 <th>CPF</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            
-                                <tr>
-                                    <td>{{pacienteFiltrado.cadastroSUS}}</td>
-                                    <td>{{pacienteFiltrado.nome}}</td>
-                                    <td>{{pacienteFiltrado.dataNascimento}}</td>
-                                    <td>{{pacienteFiltrado.cpf}}</td>
-                                    <td><a [routerLink]="['consultas', {'paramKey': pacienteFiltrado.id}]"><button class="btn ti-arrow-right" (click)="this.goToPaciente"></button></a></td>
-                                </tr>  
+                        <tbody>                            
+                            <tr>
+                                <td>{{pacienteFiltrado.cadastroSUS}}</td>
+                                <td>{{pacienteFiltrado.nome}}</td>
+                                <td>{{pacienteFiltrado.dataNascimento}}</td>
+                                <td>{{pacienteFiltrado.cpf}}</td>
+                                <td><a [routerLink]="['consultas', {'paramKey': pacienteFiltrado.id}]"><button class="btn ti-arrow-right" (click)="this.goToPaciente"></button></a></td>
+                            </tr>  
                         </tbody>
                     </table>
                 </div>
