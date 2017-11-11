@@ -3,19 +3,12 @@
     <div class="logo">
         <a class="simple-text">
             <div class="logo-img">
-                <img src="../../assets/img/angular2-logo.png" alt="">
+                <img src="../../assets/img/logoPronta2.png" alt="">
             </div>
-            +Saúde
         </a>
     </div>
     <ul class="nav">
-            <li *ngIf="isNotMobileMenu()">
-                <a href="#">
-					<i class="ti-settings"></i>
-					<p>Settings</p>
-                </a>
-            </li>
-            <li class="divider" *ngIf="isNotMobileMenu()"></li>
+        <li class="divider" *ngIf="isNotMobileMenu()"></li>
         <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
             <a [routerLink]="[menuItem.path]">
                 <i class="{{menuItem.icon}}"></i>

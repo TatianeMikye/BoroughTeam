@@ -12,11 +12,11 @@ import { UpgradeComponent }   from './upgrade/upgrade.component';
 export const AppRoutes: Routes = [
     {
         path: '',
-        redirectTo: 'dashboard',
+        redirectTo: 'pacientes',
         pathMatch: 'full',
     },
     {
-        path: 'dashboard',
+        path: 'pacientes',
         component: DashboardComponent
     },
     {
@@ -24,27 +24,11 @@ export const AppRoutes: Routes = [
         component: UserComponent
     },
     {
-        path: 'table',
+        path: 'exames',
         component: TableComponent
     },
     {
-        path: 'typography',
+        path: 'resultados',
         component: TypographyComponent
-    },
-    {
-        path: 'icons',
-        component: IconsComponent
-    },
-    {
-        path: 'maps',
-        component: MapsComponent
-    },
-    {
-        path: 'notifications',
-        component: NotificationsComponent
-    },
-    {
-        path: 'upgrade',
-        component: UpgradeComponent
     }
 ]
