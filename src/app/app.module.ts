@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { TextMaskModule } from 'angular2-text-mask';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -38,7 +39,8 @@ import { UpgradeComponent }   from './upgrade/upgrade.component';
     NavbarModule,
     FooterModule,
     FixedPluginModule,
-    NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyBr-tgUtpm8cyjYVQDrjs8YpZH7zBNWPuY'})
+    NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyBr-tgUtpm8cyjYVQDrjs8YpZH7zBNWPuY'}),
+    TextMaskModule
 
   ],
   providers: [],
